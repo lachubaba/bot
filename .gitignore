@@ -1,0 +1,23 @@
+# Virtual Environment
+venv/
+.venv/
+env/
+
+# Environment Variables (Sensitive credentials)
+.env
+
+# Python compilation cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# IDE configuration folders
+.vscode/
+.idea/
+.project
+.pydevproject
+
+# System files
+Thumbs.db
+Desktop.ini
