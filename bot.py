@@ -46,7 +46,8 @@ if not GEMINI_API_KEY:
 # Initialize the Gemini API client.
 # The SDK automatically uses the GEMINI_API_KEY environment variable.
 try:
-    gemini_client = genai.Client()
+    # Explicitly pass the validated API key to the client
+    gemini_client = genai.Client(api_key=GEMINI_API_KEY)
     logger.info("Gemini API client initialized successfully.")
 except Exception as e:
     logger.critical(f"Failed to initialize Gemini API client: {e}")
